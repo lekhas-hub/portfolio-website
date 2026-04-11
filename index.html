@@ -2,76 +2,151 @@
 <html>
 <head>
     <title>Lekha | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial;
-            margin: 0;
-            background-color: #f5f5f5;
+            background: #0f172a;
+            color: white;
         }
 
         header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
             text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+        }
+
+        header p {
+            color: #94a3b8;
         }
 
         section {
-            padding: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 8px;
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
         }
 
         h2 {
-            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(255,255,255,0.2);
+        }
+
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #1e293b;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #94a3b8;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Lekha</h1>
-        <p>ECE Student | Beginner Developer</p>
-    </header>
+<header>
+    <h1>Lekha</h1>
+    <p>ECE Student | Developer</p>
+</header>
 
-    <section>
-        <h2>About Me</h2>
+<section>
+    <h2>About Me</h2>
+    <p>I am an ECE student interested in digital systems, data structures, and web development. I build interactive and logic-based projects.</p>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>C++</span>
+        <span>Python</span>
+        <span>Data Structures</span>
+        <span>Digital Electronics</span>
+    </div>
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <div class="projects">
+
         <div class="card">
-            <p>I am an ECE student learning web development and building projects daily.</p>
+            <h3>Stack Visualizer</h3>
+            <p>Push & Pop operations visualization</p>
+            <a href="https://github.com/lekhas-hub/stack-visualizer">View</a>
         </div>
 
-        <h2>Projects</h2>
-
         <div class="card">
-            <h3>Daily Planner</h3>
-            <p>Simple HTML planner</p>
+            <h3>Queue Visualizer</h3>
+            <p>FIFO structure demonstration</p>
+            <a href="https://github.com/lekhas-hub/queue-visualizer">View</a>
         </div>
 
         <div class="card">
-            <h3>To-Do List</h3>
-            <p>Interactive task manager using JavaScript</p>
+            <h3>Expense Tracker</h3>
+            <p>Track daily expenses</p>
+            <a href="https://github.com/lekhas-hub/expense-tracker">View</a>
         </div>
 
         <div class="card">
-            <h3>Calculator</h3>
-            <p>Basic calculator with operations</p>
+            <h3>Binary Converter</h3>
+            <p>Binary to decimal conversion</p>
+            <a href="https://github.com/lekhas-hub/binary-decimal-converter">View</a>
         </div>
 
         <div class="card">
-            <h3>Fake News Detector</h3>
-            <p>Keyword-based detection web app</p>
+            <h3>Truth Table Generator</h3>
+            <p>Logic gate truth tables</p>
+            <a href="https://github.com/lekhas-hub/truth-table-generator">View</a>
         </div>
 
-        <h2>Contact</h2>
-        <div class="card">
-            <p>Email: your-email@gmail.com</p>
-        </div>
-    </section>
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: madhulekak488@gmail.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Lekha | Portfolio</p>
+</footer>
 
 </body>
 </html>
